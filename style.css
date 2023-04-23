@@ -1,0 +1,215 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+nav{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+}
+
+h3, h4, h5{
+    margin: 0;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+}
+
+.formulario{
+    
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    padding: 10px;
+    margin: 60px 10px 0 10px;
+    height: 20%;
+    
+}
+
+.formulario label{
+    align-self: center;
+    margin-bottom: 5px;
+    
+}
+
+.formulario input{
+    border-radius: 7px;
+    height: 24px;
+    width: 80%;
+    align-self: center;
+}
+
+.animales{
+    width: 50vw;
+    
+}
+
+.animales{
+    display: flex;
+    flex-direction: column;
+    
+}
+button{
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 6px;
+    height: 30px;
+}
+
+.animales h2{
+    align-self: center;
+}
+
+.formulario button{
+    margin-top: 5px;
+    background-color: blue;
+    color: white;
+    border-color: blue;
+    align-self: center;
+    min-width: 50%;
+}
+
+.animales .opcionAnimal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 0 20% 0px;
+    padding-left: 10px;
+
+}
+
+.infinito{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.borrar{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.editar{
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+
+.borrar:hover{
+    background-color: rgba(255, 0, 0, 0.575);
+}
+
+.editar:hover{
+    background-color: rgba(0, 128, 0, 0.575);
+}
+
+.formulario button:hover{
+    background-color: rgba(0, 0, 255, 0.822);
+}
+
+.valores{
+    opacity: 0;
+}
+
+
+
+
+
+.PEditar{
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.active{
+    display: flex;
+}
+
+.PEditar .formulario{
+    width: 30%;
+    min-width: 300px;
+}
+
+#regresar{
+    background-color: blueviolet;
+    border: blueviolet;
+    align-self: flex-start;
+    min-width: 10%;
+}
+
+#regresar:hover{
+    background-color: rgba(137, 43, 226, 0.767);
+}
+hr{
+    margin: 0 10%;
+}
+
+
+/*extra*/
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*responsive*/
+@media (max-width: 1072px) {
+    .animales .opcionAnimal{
+        
+        margin: 0 25px;
+        
+    
+    }
+}
+
+@media (max-width: 760px) {
+    main{
+        display: block;
+        height: auto;
+    }
+
+    .infinito{
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .animales .opcionAnimal{
+        margin-right: 55px;
+    }
+    
+
+    .formulario, .animales{
+        width: auto;
+    }
+
+    .formulario{
+        margin: 50px auto;
+        max-width: 400px;
+    }
+
+    nav h3{
+        text-align: center;
+    }
+        
+}
+
+
+
+

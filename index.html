@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD JAVASCRIPT</title>
+</head>
+<body>
+    <nav>
+        <h3>CRUD CON JAVASCRIPT Y LOCALSTORAGE</h3>
+    </nav>
+    <main>
+        <form class="formulario" id="form">
+            <label for="animal"><h3>Digite un animal</h3></label>
+            <input type="text" id="animal" name="animal">
+            <button id="boton" type="submit"><h4>Agregar</h5></button>
+        </form>
+        
+        <div class="animales">
+            <h2>ANIMALES</h2>
+            <hr>
+            <ol class="infinito" id="animales">
+                
+            </ol>
+        </div>
+    </main>
+
+    <div class="PEditar" id="PEditar">
+        <div class="formulario">
+            <form  id="forEdit">
+                <label for="animal"><h3>Animal</h3></label>
+                <input type="text" id="animalEdit" name="animalEdit">
+                <button id="botonEdit" type="submit"><h4>Editar</h5></button>
+                <!---->
+            </form>
+            <button id="regresar" onclick="regresar()">Regresar</button>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
